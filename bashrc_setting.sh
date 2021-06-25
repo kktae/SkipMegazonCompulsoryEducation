@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir ~/bin
 mkdir ~/tmp
 
