@@ -94,6 +94,6 @@ KUBE_PS1_PREFIX=''
 KUBE_PS1_SUFFIX=''
 KUBE_PS1_DIVIDER=' '
 source ~/bin/kube-ps1.sh
-PS1='\[\033[01;32m\]\u@\h \[\033[00m\]$(kube_ps1) \[\033[01;34m\]\w \[\e[0m\]$ '
+PS1='\[\033[01;32m\]\h \[\033[00m\]$(kube_ps1) \[\033[01;34m\]\w \[\e[0m\]$ '
 
 EOF
