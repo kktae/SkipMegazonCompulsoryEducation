@@ -26,14 +26,20 @@ async function AutoClick() {
 	bLoop = true;
 	while(bLoop) {
 		if(curPage.outerText < totalPage.outerText) {
-			console.log(progress.ariaValueNow)
-			if(progress.ariaValueNow == 100.0) {
+			console.log("진행도:", progress.ariaValueNow)
+			if(progress.ariaValueNow >= 100.0) {
 				btn.click()
 				console.log("click!")
 				await sleep(6000)
 			}
 			await sleep(2000)
 		}
+        else if(curPage.outerText == totalPage.outerText) {
+            if(progress.ariaValueNow >= 100.0) {
+                StopAutoClick()
+                break // actually no need break, cause call StopAutoClick function above.
+            }
+        }
 	}
 }
 
