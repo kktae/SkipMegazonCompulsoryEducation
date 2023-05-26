@@ -36,6 +36,8 @@ async function AutoClick() {
 		}
         else if(curPage.outerText == totalPage.outerText) {
             if(progress.ariaValueNow >= 100.0) {
+				console.log("해당 강의 수강 완료.")
+				console.log("다음 강의 ㄱㄱ")
                 StopAutoClick()
                 break // actually no need break, cause call StopAutoClick function above.
             }
