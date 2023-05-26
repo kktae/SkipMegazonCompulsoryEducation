@@ -15,6 +15,7 @@ for (var i=0, max=nav.length; i < max; i++) {
 	curPage = nav[0].getElementsByClassName("current")[0]
 	totalPage = nav[0].getElementsByClassName("total")[0]
 }
+
 console.log("find all done")
 
 function sleep(ms) {
@@ -34,13 +35,15 @@ async function AutoClick() {
 			}
 			await sleep(2000)
 		}
-        else if(curPage.outerText == totalPage.outerText) {
+        else if(curPage.outerText >= totalPage.outerText) {
             if(progress.ariaValueNow >= 100.0) {
 				console.log("해당 강의 수강 완료.")
 				console.log("다음 강의 ㄱㄱ")
                 StopAutoClick()
                 break // actually no need break, cause call StopAutoClick function above.
+				await sleep(1000)
             }
+			await sleep(2000)
         }
 	}
 }
