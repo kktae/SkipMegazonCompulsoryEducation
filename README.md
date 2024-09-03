@@ -1,4 +1,4 @@
-# TEST
+# SkipMegazonCompulsoryEducation
 
 ## MZ_SKIP_EDU.js  
 ### 메가존법정의무교육 자동 넘기기
@@ -8,5 +8,7 @@
 4. progress bar가 다 채워진 후, 자동으로 넘어가는 지 확인.
 5. 강의마다 1 ~ 4 반복.
 
-bash_setting.sh  
-초기 user .bashrc 세팅
+---
+
+~bash_setting.sh~  
+~초기 user .bashrc 세팅~
