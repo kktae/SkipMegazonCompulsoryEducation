@@ -1,7 +1,7 @@
 # SkipMegazonCompulsoryEducation
 
 ## MZ_SKIP_EDU.js  
-### 메가존법정의무교육 자동 넘기기
+### 법정의무교육 자동 넘기기
 1. 강의 켜놓은 후
 2. 켜놓은 강의에서 개발자 콘솔 열고
 3. 해당 스크립트 C&P 후 Enter 누름.
